@@ -1,0 +1,8 @@
+mpirun -np 4 ./Gadget2 lcdm_gas.param 
+cd ~/Downloads/gadgetviewer-1.0.10/main/src/
+./gadgetviewer
+mencoder mf://*.png -mf w=800:h=600:fps=20:type=png -ovc lavc -lavcopts vcodec=mpeg4:mbd=2:trell -oac copy -o output.mp4
+
+
+chmod+x
+mpirun -np 4 ./run.sh lcdm_gas.param 
