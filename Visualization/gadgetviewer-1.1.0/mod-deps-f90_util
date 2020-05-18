@@ -1,0 +1,12 @@
+key_file.o : 	key_file.F90 c_types.o
+
+c_types.o : 	c_types.F90
+
+f90_util.o : 	f90_util.F90 terminate.o get_arguments.o c_types.o
+
+byteswap.o : 	byteswap.f90 f90_util.o c_types.o
+
+terminate.o : 	terminate.f90 c_types.o
+
+get_arguments.o : 	get_arguments.F90 terminate.o
+
