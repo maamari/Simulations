@@ -1,7 +1,7 @@
 Generating ICs:
 ---------------
-	Cosmological ICs: MUSIC
-	Galactic ICs: Galstep	 
+	Cosmological initial conditions: MUSIC
+	Galactic initial conditions: Galstep	 
 
 
 Running GADGET-2:
